@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Đăng nhập - SHOE-DEV</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header class="header-container">
+      <div class="logo" onclick="location.href = 'index.html'"><img src="./logo.png" alt=""> SHOE-DEV</div>
+
+      <nav class="main-menu">
+        <a href="index.html">Tất cả</a>
+        <a href="index.html">Nike</a>
+        <a href="index.html">Adidas</a>
+        <a href="index.html">Jordan</a>
+        <a href="index.html">Puma</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="cart.html">🛒</a>
+        <a href="login.html" style="color: #38bdf8">Đăng nhập</a>
+      </div>
+    </header>
+
+  <main class="login-page">
+  <div class="login-container">
+    <div id="loginFormBlock" class="form-box">
+      <h2>Đăng Nhập</h2>
+      <form id="loginForm">
+        <div class="input-group">
+          <input type="text" id="loginUser" required placeholder="Tên đăng nhập">
+        </div>
+        <div class="input-group">
+          <input type="password" id="loginPass" required placeholder="Mật khẩu">
+        </div>
+        <button type="submit" class="auth-btn">Đăng Nhập</button>
+        <p>Chưa có tài khoản? <a href="#" id="btnShowRegister">Đăng ký ngay</a></p>
+      </form>
+    </div>
+
+    <div id="registerFormBlock" class="form-box" style="display: none;">
+      <h2>Đăng Ký Tài Khoản</h2>
+      <form id="registerForm">
+        <div class="input-group">
+          <input type="text" id="regUser" required placeholder="Tên tài khoản mới">
+        </div>
+        <div class="input-group">
+          <input type="email" id="regEmail" required placeholder="Email">
+        </div>
+        <div class="input-group">
+          <input type="password" id="regPass" required placeholder="Mật khẩu">
+        </div>
+        <button type="submit" class="auth-btn" style="background: #38bdf8;">Tạo Tài Khoản</button>
+        <p>Đã có tài khoản? <a href="#" id="btnShowLogin">Quay lại đăng nhập</a></p>
+      </form>
+    </div>
+  </div>
+</main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h3 class="logo"><img src="./logo.png" alt="logo"> SHOE-DEV</h3>
+          <p class="footer-desc">
+            Chuyên cung cấp các dòng giày sneaker chính hãng, phong cách và chất
+            lượng hàng đầu.
+          </p>
+          <div class="social-links">
+            <a href="#">FB</a><a href="#">IG</a><a href="#">YT</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Hỗ trợ khách hàng</h3>
+          <ul>
+           <li><a href="https://giaycaosmartmen.com/size-giay/?srsltid=AfmBOoozGMeH110TVuAJDGoxpIifj470SZFiopf1DOjmgs2clUxjfLrx">Hướng dẫn chọn size</a></li>
+            <li><a href="https://shopdonghai.com/pages/chinh-sach-doi-hang?srsltid=AfmBOorIhLxTlWE72NDkH1gFvkeZMiLoQkLtyZE2UgeWdxq3u6ymZJO3">Chính sách đổi trả</a></li>
+            <li><a href="https://chuyenphat247.net/?gad_source=1&gad_campaignid=23471441905&gbraid=0AAAABCkZBwpIEmaTHJZcgMTcK5KzBhnWv&gclid=CjwKCAiAybfLBhAjEiwAI0mBBmQaMzvhSadwUj5J7tyeuNlUjwWkVOcyGctMvEQo1BheD13C-GBsxBoCyf0QAvD_BwE">Thanh toán & Vận chuyển</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+               <h3>Liên hệ</h3>
+         <p>
+    📍 <strong>Địa chỉ:</strong> 
+    <a href="https://maps.google.com/?cid=18047406492502733383&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank">
+        Số 79, đường DT743, phường Bình Hòa, Thuận An, Bình Dương
+    </a>
+</p>
+          <p>📞 Hotline:098 626 56 79</p>
+          <a href="https://www.facebook.com/bdi.edu.vn/?locale=vi_VN"><p>✉️ Email:truongtccnbd@gmail.com</p></a>
+          <div class="student-info">
+            <span>Sinh viên: Vũ Thái Huy</span> <br />
+            <span>MSSV: 24N01214</span>
+          </div>
+          <div class="student-info">
+            <span>Sinh viên: Đỗ Lâm Trường</span> <br />
+            <span>MSSV: 24N01211</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2024 SHOE-DEV. All rights reserved.</div>
+    </footer>
+
+    <script src="../js/login.js"></script>
+  </body>
+</html>

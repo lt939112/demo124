@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chi tiết sản phẩm</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header class="header-container">
+      <div class="logo" onclick="location.href = 'index.html'"><img src="./logo.png" alt=""> SHOE-DEV</div>
+    </header>
+
+    <main>
+      <section class="content" id="productDetailContainer">
+<script src="script.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const params = new URLSearchParams(window.location.search);
+    const productId = parseInt(params.get("id"));
+
+    const product = shoes.find((s) => s.id === productId);
+    const container = document.getElementById("productDetailContainer");
+
+    if (product && container) {
+     container.innerHTML = `
+    <div class="detail-wrapper">
+        <div class="product-image-container">
+            <img src="${product.image}" alt="${product.name}">
+        </div>
+        <div class="product-info">
+             <div class="detail-brand" style="color:var(--secondary-color); font-weight:bold; text-transform:uppercase;">${product.brand}</div>
+             <h1 class="detail-name" style="font-size:36px; margin:10px 0;">${product.name}</h1>
+             <p class="detail-price" style="font-size:28px; color:var(--danger-color); font-weight:bold;">${product.price.toLocaleString()}đ</p>
+             <p class="detail-desc" style="line-height:1.6; margin-bottom:20px;">${product.desc}</p>
+             
+             <div class="btn-group" style="display:flex; gap:10px;">
+                <button onclick="addToCart(${product.id})" style="flex:1; padding:15px; background:var(--secondary-color); colorvar(--primary-color); border:none; border-radius:10px; cursor:pointer; font-weight:bold;">THÊM VÀO GIỎ</button>
+                <button onclick="location.href='cart.html'" style="flex:1; padding:15px; background:var(--secondary-color); color:var(--primary-color); border:none; border-radius:10px; cursor:pointer; font-weight:bold;">MUA NGAY</button>
+             </div>
+        </div>
+    </div>
+`;
+    }
+  });
+
+  // Hàm xử lý chung cho cả 2 nút
+  function handlePurchase(id, type) {
+    const userLogin = localStorage.getItem("userLogin");
+
+    if (!userLogin) {
+      alert("Vui lòng đăng nhập để thực hiện thao tác này!");
+      window.location.href = "login.html";
+      return;
+    }
+
+    // Gọi hàm addToCart có sẵn trong script.js
+    addToCart(id);
+
+    if (type === 'buy') {
+      window.location.href = "cart.html"; // Nếu là "Mua ngay" thì chuyển thẳng tới giỏ hàng
+    }
+  }
+</script>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h3 class="logo"><img src="./logo.png" alt="logo"> SHOE-DEV</h3>
+          <p class="footer-desc">
+            Chuyên cung cấp các dòng giày sneaker chính hãng, phong cách và chất
+            lượng hàng đầu. Nâng niu bàn chân Việt.
+          </p>
+          <div class="social-links">
+            <a href="#">FB</a>
+            <a href="#">IG</a>
+            <a href="#">YT</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Hỗ trợ khách hàng</h3>
+          <ul>
+            <li><a href="https://giaycaosmartmen.com/size-giay/?srsltid=AfmBOoozGMeH110TVuAJDGoxpIifj470SZFiopf1DOjmgs2clUxjfLrx">Hướng dẫn chọn size</a></li>
+            <li><a href="https://shopdonghai.com/pages/chinh-sach-doi-hang?srsltid=AfmBOorIhLxTlWE72NDkH1gFvkeZMiLoQkLtyZE2UgeWdxq3u6ymZJO3">Chính sách đổi trả</a></li>
+            <li><a href="https://chuyenphat247.net/?gad_source=1&gad_campaignid=23471441905&gbraid=0AAAABCkZBwpIEmaTHJZcgMTcK5KzBhnWv&gclid=CjwKCAiAybfLBhAjEiwAI0mBBmQaMzvhSadwUj5J7tyeuNlUjwWkVOcyGctMvEQo1BheD13C-GBsxBoCyf0QAvD_BwE">Thanh toán & Vận chuyển</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+              <h3>Liên hệ</h3>
+         <p>
+    📍 <strong>Địa chỉ:</strong> 
+    <a href="https://maps.google.com/?cid=18047406492502733383&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank">
+        Số 79, đường DT743, phường Bình Hòa, Thuận An, Bình Dương
+    </a>
+</p>
+          <p>📞 Hotline:098 626 56 79</p>
+          <a href="https://www.facebook.com/bdi.edu.vn/?locale=vi_VN"><p>✉️ Email:truongtccnbd@gmail.com</p></a>
+          <div class="student-info">
+            <span>Sinh viên: Vũ Thái Huy</span> <br />
+            <span>MSSV: 24N01214</span>
+          </div>
+          <div class="student-info">
+            <span>Sinh viên: Đỗ Lâm Trường</span> <br />
+            <span>MSSV: 24N01211</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">© 2024 SHOE-DEV. All rights reserved.</div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script>
+      renderDetailPage();
+    </script>
+    
+  </body>
+</html>
