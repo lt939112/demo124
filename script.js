@@ -1,32 +1,32 @@
 //
 const shoes = [
   // --- 1. NIKE (Giữ nguyên 5 mẫu đầu) ---
-  { id: 1, name: "Nike Air Force 1 '07", price: 2490000, brand: "Nike", image: "./imgweb/nike_1.png", desc: "Biểu tượng thời trang đường phố." },
-  { id: 2, name: "Nike Air Max Pulse", price: 4500000, brand: "Nike", image: "./imgweb/nike_2.png", desc: "Sự kết hợp hoàn hảo giữa êm ái và phong cách." },
-  { id: 3, name: "Nike Pegasus 40", price: 3200000, brand: "Nike", image: "./imgweb/nike_3.png", desc: "Dòng giày chạy bộ huyền thoại." },
-  { id: 4, name: "Nike Court Legacy", price: 1900000, brand: "Nike", image: "./imgweb/nike_4.png", desc: "Phong cách tennis cổ điển." },
-  { id: 5, name: "Nike Dunk Low Retro", price: 3500000, brand: "Nike", image: "./imgweb/nike_5.png", desc: "Cực kỳ cá tính và nổi bật." },
+  { id: 1, name: "Nike Air Force 1 '07", price: 2490000, brand: "Nike", image: "/imgweb/nike_1.png", desc: "Biểu tượng thời trang đường phố." },
+  { id: 2, name: "Nike Air Max Pulse", price: 4500000, brand: "Nike", image: "/imgweb/nike_2.png", desc: "Sự kết hợp hoàn hảo giữa êm ái và phong cách." },
+  { id: 3, name: "Nike Pegasus 40", price: 3200000, brand: "Nike", image: "/imgweb/nike_3.png", desc: "Dòng giày chạy bộ huyền thoại." },
+  { id: 4, name: "Nike Court Legacy", price: 1900000, brand: "Nike", image: "/imgweb/nike_4.png", desc: "Phong cách tennis cổ điển." },
+  { id: 5, name: "Nike Dunk Low Retro", price: 3500000, brand: "Nike", image: "/imgweb/nike_5.png", desc: "Cực kỳ cá tính và nổi bật." },
 
   // --- 2. ADIDAS (5 mẫu) ---
-  { id: 6, name: "Adidas Samba OG", price: 2800000, brand: "Adidas", image: "./imgweb/adidas_1.png", desc: "Mẫu giày 'quốc dân' hiện nay." },
-  { id: 7, name: "Adidas Gazelle Bold", price: 3100000, brand: "Adidas", image: "./imgweb/adidas_2.png", desc: "Đế cao tôn dáng cho các bạn nữ." },
-  { id: 8, name: "Adidas Campus 00s", price: 2300000, brand: "Adidas", image: "./imgweb/adidas_3.png", desc: "Vẻ đẹp vượt thời gian." },
-  { id: 9, name: "Adidas Ultraboost Light", price: 5000000, brand: "Adidas", image: "./imgweb/adidas_4.png", desc: "Công nghệ đệm Boost êm nhất thế giới." },
-  { id: 10, name: "Adidas Forum Low", price: 2500000, brand: "Adidas", image: "./imgweb/adidas_5.png", desc: "Phong cách bóng rổ thập niên 80." },
+  { id: 6, name: "Adidas Samba OG", price: 2800000, brand: "Adidas", image: "/imgweb/adidas_1.png", desc: "Mẫu giày 'quốc dân' hiện nay." },
+  { id: 7, name: "Adidas Gazelle Bold", price: 3100000, brand: "Adidas", image: "/imgweb/adidas_2.png", desc: "Đế cao tôn dáng cho các bạn nữ." },
+  { id: 8, name: "Adidas Campus 00s", price: 2300000, brand: "Adidas", image: "/imgweb/adidas_3.png", desc: "Vẻ đẹp vượt thời gian." },
+  { id: 9, name: "Adidas Ultraboost Light", price: 5000000, brand: "Adidas", image: "/imgweb/adidas_4.png", desc: "Công nghệ đệm Boost êm nhất thế giới." },
+  { id: 10, name: "Adidas Forum Low", price: 2500000, brand: "Adidas", image: "/imgweb/adidas_5.png", desc: "Phong cách bóng rổ thập niên 80." },
 
   // --- 3. JORDAN (Đã thêm 1 mẫu mới - ID 15) ---
-  { id: 11, name: "Jordan 1 Low Panda", price: 3800000, brand: "Jordan", image: "./imgweb/jordan_1.png", desc: "Phối màu trắng đen dễ mặc nhất." },
-  { id: 12, name: "Jordan 1 Mid Grey", price: 4200000, brand: "Jordan", image: "./imgweb/jordan_2.png", desc: "Màu xám thanh lịch, sang trọng." },
-  { id: 13, name: "Jordan Stay Loyal 2", price: 3600000, brand: "Jordan", image: "./imgweb/jordan_3.png", desc: "Hỗ trợ bảo vệ cổ chân cực tốt." },
-  { id: 14, name: "Jordan 1 High OG", price: 5500000, brand: "Jordan", image: "./imgweb/jordan_4.png", desc: "Đẳng cấp từ dòng High-top huyền thoại." },
-  { id: 15, name: "Jordan 4 Retro", price: 6200000, brand: "Jordan", image: "./imgweb/jordan_5.png", desc: "Thiết kế hầm hố, phong cách hip-hop mạnh mẽ." },
+  { id: 11, name: "Jordan 1 Low Panda", price: 3800000, brand: "Jordan", image: "/imgweb/jordan_1.png", desc: "Phối màu trắng đen dễ mặc nhất." },
+  { id: 12, name: "Jordan 1 Mid Grey", price: 4200000, brand: "Jordan", image: "/imgweb/jordan_2.png", desc: "Màu xám thanh lịch, sang trọng." },
+  { id: 13, name: "Jordan Stay Loyal 2", price: 3600000, brand: "Jordan", image: "/imgweb/jordan_3.png", desc: "Hỗ trợ bảo vệ cổ chân cực tốt." },
+  { id: 14, name: "Jordan 1 High OG", price: 5500000, brand: "Jordan", image: "/imgweb/jordan_4.png", desc: "Đẳng cấp từ dòng High-top huyền thoại." },
+  { id: 15, name: "Jordan 4 Retro", price: 6200000, brand: "Jordan", image: "/imgweb/jordan_5.png", desc: "Thiết kế hầm hố, phong cách hip-hop mạnh mẽ." },
 
   // --- 4. PUMA (Đã thêm 4 mẫu mới - ID 16 -> 20) ---
-  { id: 16, name: "Puma Suede Classic", price: 2100000, brand: "Puma", image: "./imgweb/puma_3.png", desc: "Chất liệu da lộn mềm mại, lịch lãm." },
-  { id: 17, name: "Puma RS-X Efekt", price: 3200000, brand: "Puma", image: "./imgweb/puma_1.png", desc: "Thiết kế Chunky hiện đại, phá cách." },
-  { id: 18, name: "Puma Cali Dream", price: 2600000, brand: "Puma", image: "./imgweb/puma_2.png", desc: "Mang lại vẻ ngoài trẻ trung và năng động." },
-  { id: 19, name: "Puma MB.01 Lamelo", price: 3900000, brand: "Puma", image: "./imgweb/puma_4.png", desc: "Dòng giày bóng rổ hiệu năng cao." },
-  { id: 20, name: "Puma Mayze Wedge", price: 2900000, brand: "Puma", image: "./imgweb/puma_5.png", desc: "Đế xuồng cá tính dành riêng cho phái đẹp." }
+  { id: 16, name: "Puma Suede Classic", price: 2100000, brand: "Puma", image: "/imgweb/puma_3.png", desc: "Chất liệu da lộn mềm mại, lịch lãm." },
+  { id: 17, name: "Puma RS-X Efekt", price: 3200000, brand: "Puma", image: "/imgweb/puma_1.png", desc: "Thiết kế Chunky hiện đại, phá cách." },
+  { id: 18, name: "Puma Cali Dream", price: 2600000, brand: "Puma", image: "/imgweb/puma_2.png", desc: "Mang lại vẻ ngoài trẻ trung và năng động." },
+  { id: 19, name: "Puma MB.01 Lamelo", price: 3900000, brand: "Puma", image: "/imgweb/puma_4.png", desc: "Dòng giày bóng rổ hiệu năng cao." },
+  { id: 20, name: "Puma Mayze Wedge", price: 2900000, brand: "Puma", image: "/imgweb/puma_5.png", desc: "Đế xuồng cá tính dành riêng cho phái đẹp." }
 ];
 
 // --- LOGIC TRANG CHỦ ---
@@ -195,4 +195,5 @@ function checkLoginStatus() {
 }
 
 // Gọi hàm kiểm tra ngay khi load trang
+
 checkLoginStatus();
